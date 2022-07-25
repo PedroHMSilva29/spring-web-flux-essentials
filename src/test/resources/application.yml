@@ -1,0 +1,13 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/root?schema=anime
+    password: root
+    username: root
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
+server:
+  error:
+    incluse-stacktrace: on_param
